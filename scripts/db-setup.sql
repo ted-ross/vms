@@ -448,12 +448,12 @@ INSERT INTO Users (Id, DisplayName, Email, PasswordHash) VALUES (1, 'Ted Ross', 
 INSERT INTO WebSessions (Id, UserId) VALUES (gen_random_uuid(), 1);
 
 INSERT INTO TargetPlatforms (ShortName, LongName) VALUES
-    ('m-server',   'Co-located with the management server'),
-    ('kube',       'Kubernetes'),
-    ('sk2',        'Kubernetes+SkupperV2'),
-    ('podman-sk2', 'Podman+SkupperV2'),
-    ('docker-sk2', 'Docker+SkupperV2'),
-    ('linux-sk2',  'Linux+SkupperV2');
+    ('sk2',      'Kubernetes/OpenShift'),
+    ('kube',     'skx-prototype'),
+    ('podman',   'Podman'),
+    ('docker',   'Docker'),
+    ('linux',    'Linux'),
+    ('m-server', 'Co-located with the management server');
 
 INSERT INTO BlockTypes (Name, AllowNorth, AllowSouth, Allocation) VALUES
     ('skupperx.io/component', true,  false, 'independent'),

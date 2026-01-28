@@ -24,7 +24,7 @@ export async function BuildCertTable() {
     section.innerHTML = "<h2>TLS Certificate Tree</h2>";
     const response = await fetch('api/v1alpha1/certs');
     const certList = await response.json();
-    const layout = SetupTable(['', 'Label', 'CA', 'Expiration', 'Renewal']);
+    const layout = SetupTable(['', 'Label', 'CA', 'Expiration', 'Renewal', 'Generation']);
     for (const item of certList) {
         let row = layout.insertRow();
         row.insertCell();
