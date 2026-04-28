@@ -10,7 +10,7 @@ const appSrcDir = join(appDir, 'src');
 const appCommonSrcDir = join(appSrcDir, 'common');
 const appConsoleSrcDir = join(appSrcDir, 'console');
 const commonSourceDir = join(currentDir, '../common');
-const consoleBuildSourceDir = join(currentDir, '../console/build');
+const consoleBuildSourceDir = join(currentDir, '../console/dist');
 const entryPoint = join(currentDir, 'index.js');
 const appEntryPoint = join(appDir, 'index.js');
 
